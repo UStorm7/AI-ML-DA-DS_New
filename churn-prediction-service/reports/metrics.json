@@ -1,0 +1,139 @@
+{
+  "meta": {
+    "model": "lightgbm_tuned",
+    "calibration": "isotonic (5-fold)",
+    "threshold": 0.22,
+    "trained_at": "2026-10-26T18:15:41+00:00",
+    "n_train": 5634,
+    "features": [
+      "gender",
+      "SeniorCitizen",
+      "Partner",
+      "Dependents",
+      "tenure",
+      "PhoneService",
+      "MultipleLines",
+      "InternetService",
+      "OnlineSecurity",
+      "OnlineBackup",
+      "DeviceProtection",
+      "TechSupport",
+      "StreamingTV",
+      "StreamingMovies",
+      "Contract",
+      "PaperlessBilling",
+      "PaymentMethod",
+      "MonthlyCharges",
+      "TotalCharges"
+    ]
+  },
+  "cv": [
+    {
+      "model": "lightgbm_tuned",
+      "roc_auc": 0.8489,
+      "roc_auc_std": 0.0114,
+      "pr_auc": 0.6693,
+      "pr_auc_std": 0.0214,
+      "brier": 0.134
+    },
+    {
+      "model": "logistic_regression",
+      "roc_auc": 0.8473,
+      "roc_auc_std": 0.0111,
+      "pr_auc": 0.6621,
+      "pr_auc_std": 0.0137,
+      "brier": 0.1343
+    },
+    {
+      "model": "random_forest",
+      "roc_auc": 0.8465,
+      "roc_auc_std": 0.0093,
+      "pr_auc": 0.6614,
+      "pr_auc_std": 0.0213,
+      "brier": 0.1348
+    },
+    {
+      "model": "lightgbm",
+      "roc_auc": 0.8439,
+      "roc_auc_std": 0.0093,
+      "pr_auc": 0.6567,
+      "pr_auc_std": 0.0173,
+      "brier": 0.1367
+    },
+    {
+      "model": "baseline (prior)",
+      "roc_auc": 0.5,
+      "roc_auc_std": 0.0,
+      "pr_auc": 0.2654,
+      "pr_auc_std": 0.0001,
+      "brier": 0.1949
+    }
+  ],
+  "test": {
+    "roc_auc": 0.8474,
+    "pr_auc": 0.6596,
+    "brier": 0.1352,
+    "threshold": 0.22,
+    "precision": 0.4851,
+    "recall": 0.8262,
+    "f1": 0.6113,
+    "pct_contacted": 45.21,
+    "campaign_profit": 50987.0
+  },
+  "profit_baselines": {
+    "contact_nobody": 0.0,
+    "contact_everyone": 27524.0,
+    "contact_month_to_month": 45296.0,
+    "default_threshold_0.5": 39743.0
+  },
+  "top_shap_features": [
+    {
+      "feature": "Contract_Month-to-month",
+      "mean_abs_shap": 0.5844
+    },
+    {
+      "feature": "tenure",
+      "mean_abs_shap": 0.2924
+    },
+    {
+      "feature": "Contract_Two year",
+      "mean_abs_shap": 0.2796
+    },
+    {
+      "feature": "OnlineSecurity_No",
+      "mean_abs_shap": 0.2025
+    },
+    {
+      "feature": "InternetService_Fiber optic",
+      "mean_abs_shap": 0.1634
+    },
+    {
+      "feature": "TechSupport_No",
+      "mean_abs_shap": 0.1598
+    },
+    {
+      "feature": "MonthlyCharges",
+      "mean_abs_shap": 0.1489
+    },
+    {
+      "feature": "TotalCharges",
+      "mean_abs_shap": 0.1433
+    },
+    {
+      "feature": "PaymentMethod_Electronic check",
+      "mean_abs_shap": 0.1266
+    },
+    {
+      "feature": "avg_monthly_spend",
+      "mean_abs_shap": 0.1107
+    },
+    {
+      "feature": "MultipleLines_No",
+      "mean_abs_shap": 0.0904
+    },
+    {
+      "feature": "charges_per_service",
+      "mean_abs_shap": 0.0809
+    }
+  ]
+}
