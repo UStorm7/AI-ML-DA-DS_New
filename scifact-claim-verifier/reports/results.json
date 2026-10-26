@@ -1,0 +1,78 @@
+{
+  "retrieval": [
+    {
+      "retriever": "bm25",
+      "n_claims": 188,
+      "recall@1": 0.6843971631205673,
+      "recall@3": 0.811613475177305,
+      "recall@10": 0.9168439716312057,
+      "recall@100": 0.9643617021276596,
+      "mrr@10": 0.7747593718338399,
+      "ndcg@10": 0.8058106203117331,
+      "ndcg@10_beir": 0.6466684546988497,
+      "ms_per_query": 10.556743996665622
+    },
+    {
+      "retriever": "tfidf",
+      "n_claims": 188,
+      "recall@1": 0.500886524822695,
+      "recall@3": 0.7092198581560284,
+      "recall@10": 0.8453014184397163,
+      "recall@100": 0.9723404255319149,
+      "mrr@10": 0.6314083080040527,
+      "ndcg@10": 0.6782541518903321,
+      "ndcg@10_beir": 0.5598480769496444,
+      "ms_per_query": 3.125369920000291
+    },
+    {
+      "retriever": "hybrid(bm25+tfidf)",
+      "n_claims": 188,
+      "recall@1": 0.6046099290780143,
+      "recall@3": 0.7358156028368795,
+      "recall@10": 0.8875886524822696,
+      "recall@100": 0.9723404255319149,
+      "mrr@10": 0.7055935494765283,
+      "ndcg@10": 0.7461913197782635,
+      "ndcg@10_beir": 0.6050784683521748,
+      "ms_per_query": 14.59450876000119
+    }
+  ],
+  "rationale": [
+    {
+      "selector": "TfidfSentenceSelector",
+      "sentence_recall@3": 0.5437158469945356
+    }
+  ],
+  "verification": [
+    {
+      "verifier": "lexical",
+      "retrieval": "oracle",
+      "abstract_label": {
+        "precision": 0.5591397849462365,
+        "recall": 0.49760765550239233,
+        "f1": 0.5265822784810127
+      },
+      "claim_macro_f1": 0.5728768071774403,
+      "claim_f1_per_class": {
+        "SUPPORT": 0.6228070175438597,
+        "CONTRADICT": 0.373134328358209,
+        "NEI": 0.7226890756302521
+      }
+    },
+    {
+      "verifier": "lexical",
+      "retrieval": "bm25",
+      "abstract_label": {
+        "precision": 0.20192307692307693,
+        "recall": 0.4019138755980861,
+        "f1": 0.2688
+      },
+      "claim_macro_f1": 0.4749792906560863,
+      "claim_f1_per_class": {
+        "SUPPORT": 0.5791505791505791,
+        "CONTRADICT": 0.3375,
+        "NEI": 0.5082872928176796
+      }
+    }
+  ]
+}
