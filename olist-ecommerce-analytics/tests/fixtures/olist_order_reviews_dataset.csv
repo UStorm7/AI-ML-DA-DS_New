@@ -1,0 +1,5 @@
+review_id,order_id,review_score,review_comment_title,review_comment_message,review_creation_date,review_answer_timestamp
+r1,o1,2,,,2017-03-09 00:00:00,2017-03-09 12:00:00
+r1b,o1,5,,,2017-03-10 00:00:00,2017-03-10 12:00:00
+r2,o2,1,,late!,2017-03-26 00:00:00,2017-03-26 12:00:00
+r3,o3,5,,,2017-05-07 00:00:00,2017-05-07 12:00:00

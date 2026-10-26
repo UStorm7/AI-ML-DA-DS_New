@@ -1,0 +1,8 @@
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+RAW_DIR = ROOT / "data" / "raw"
+DB_PATH = ROOT / "data" / "olist.duckdb"
+SQL_DIR = ROOT / "sql"
+FIG_DIR = ROOT / "reports" / "figures"
+REPORT_DIR = ROOT / "reports"

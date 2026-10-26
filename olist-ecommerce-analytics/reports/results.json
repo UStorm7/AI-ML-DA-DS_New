@@ -1,0 +1,272 @@
+{
+  "totals": {
+    "orders": 96203,
+    "gmv_brl": 15374497.0,
+    "aov_brl": 159.81,
+    "customers": 93096
+  },
+  "retention_month1_avg_pct": 0.47,
+  "repeat_customer_pct": 3.0,
+  "review_by_delay_bucket": [
+    {
+      "delay_bucket": "1: 10+ days early",
+      "orders": 56778,
+      "avg_review": 4.324,
+      "pct_negative": 8.92
+    },
+    {
+      "delay_bucket": "2: 5-10 days early",
+      "orders": 22425,
+      "avg_review": 4.277,
+      "pct_negative": 9.18
+    },
+    {
+      "delay_bucket": "3: 0-5 days early",
+      "orders": 8752,
+      "avg_review": 4.154,
+      "pct_negative": 11.01
+    },
+    {
+      "delay_bucket": "4: 0-3 days late",
+      "orders": 2596,
+      "avg_review": 3.747,
+      "pct_negative": 19.68
+    },
+    {
+      "delay_bucket": "5: 3-7 days late",
+      "orders": 1786,
+      "avg_review": 2.305,
+      "pct_negative": 61.59
+    },
+    {
+      "delay_bucket": "6: 7+ days late",
+      "orders": 3223,
+      "avg_review": 1.727,
+      "pct_negative": 78.44
+    }
+  ],
+  "late_delivery_effect": {
+    "n_orders": 95560,
+    "late_share_pct": 8.01,
+    "mean_review_late": 2.565,
+    "mean_review_on_time": 4.295,
+    "neg_rate_late_pct": 54.06,
+    "neg_rate_on_time_pct": 9.2,
+    "welch_t": -89.42,
+    "welch_p": 0.0,
+    "mannwhitney_p": 0.0,
+    "adjusted_odds_ratio_late": 11.94,
+    "adjusted_or_95ci": [
+      11.34,
+      12.58
+    ]
+  },
+  "repeat_by_first_experience": [
+    {
+      "first_experience": "late, not negative",
+      "customers": 3563,
+      "repeat_rate_pct": 2.69
+    },
+    {
+      "first_experience": "negative review",
+      "customers": 11870,
+      "repeat_rate_pct": 2.82
+    },
+    {
+      "first_experience": "on time & ok",
+      "customers": 77663,
+      "repeat_rate_pct": 3.04
+    }
+  ],
+  "late_rate_by_state_top5": [
+    {
+      "customer_state": "AL",
+      "orders": 396,
+      "late_pct": 23.99,
+      "avg_delivery_days": 24.52,
+      "avg_review": 3.847
+    },
+    {
+      "customer_state": "MA",
+      "orders": 713,
+      "late_pct": 19.64,
+      "avg_delivery_days": 21.54,
+      "avg_review": 3.829
+    },
+    {
+      "customer_state": "PI",
+      "orders": 475,
+      "late_pct": 16.0,
+      "avg_delivery_days": 19.44,
+      "avg_review": 3.994
+    },
+    {
+      "customer_state": "CE",
+      "orders": 1273,
+      "late_pct": 15.4,
+      "avg_delivery_days": 21.24,
+      "avg_review": 3.94
+    },
+    {
+      "customer_state": "SE",
+      "orders": 332,
+      "late_pct": 15.36,
+      "avg_delivery_days": 21.44,
+      "avg_review": 3.9
+    }
+  ],
+  "rfm_segments": [
+    {
+      "segment": "At-risk high-value",
+      "customers": 20558,
+      "avg_recency_days": 334.18,
+      "avg_orders": 1.0,
+      "avg_spend": 298.27,
+      "total_spend": 6131777.6,
+      "pct_customers": 22.08,
+      "pct_revenue": 39.88
+    },
+    {
+      "segment": "New high-value",
+      "customers": 14453,
+      "avg_recency_days": 91.61,
+      "avg_orders": 1.0,
+      "avg_spend": 302.04,
+      "total_spend": 4365380.63,
+      "pct_customers": 15.52,
+      "pct_revenue": 28.39
+    },
+    {
+      "segment": "Hibernating",
+      "customers": 22343,
+      "avg_recency_days": 394.15,
+      "avg_orders": 1.0,
+      "avg_spend": 72.71,
+      "total_spend": 1624468.38,
+      "pct_customers": 24.0,
+      "pct_revenue": 10.57
+    },
+    {
+      "segment": "New low-value",
+      "customers": 21769,
+      "avg_recency_days": 89.98,
+      "avg_orders": 1.0,
+      "avg_spend": 72.91,
+      "total_spend": 1587224.05,
+      "pct_customers": 23.38,
+      "pct_revenue": 10.32
+    },
+    {
+      "segment": "Needs attention",
+      "customers": 11184,
+      "avg_recency_days": 220.42,
+      "avg_orders": 1.0,
+      "avg_spend": 71.97,
+      "total_spend": 804891.3,
+      "pct_customers": 12.01,
+      "pct_revenue": 5.24
+    },
+    {
+      "segment": "Loyal - lapsing",
+      "customers": 1584,
+      "avg_recency_days": 318.9,
+      "avg_orders": 2.08,
+      "avg_spend": 298.19,
+      "total_spend": 472335.23,
+      "pct_customers": 1.7,
+      "pct_revenue": 3.07
+    },
+    {
+      "segment": "Champions",
+      "customers": 1205,
+      "avg_recency_days": 89.06,
+      "avg_orders": 2.15,
+      "avg_spend": 322.34,
+      "total_spend": 388419.33,
+      "pct_customers": 1.29,
+      "pct_revenue": 2.53
+    }
+  ],
+  "category_performance_top10": [
+    {
+      "category": "health_beauty",
+      "orders": 8571,
+      "gmv": 1406712.0,
+      "avg_review": 4.237,
+      "late_pct": 9.01,
+      "freight_pct_of_price": 27.9
+    },
+    {
+      "category": "watches_gifts",
+      "orders": 5466,
+      "gmv": 1258841.0,
+      "avg_review": 4.126,
+      "late_pct": 8.56,
+      "freight_pct_of_price": 16.5
+    },
+    {
+      "category": "bed_bath_table",
+      "orders": 9162,
+      "gmv": 1223393.0,
+      "avg_review": 4.011,
+      "late_pct": 8.85,
+      "freight_pct_of_price": 27.2
+    },
+    {
+      "category": "sports_leisure",
+      "orders": 7473,
+      "gmv": 1116670.0,
+      "avg_review": 4.233,
+      "late_pct": 7.81,
+      "freight_pct_of_price": 28.3
+    },
+    {
+      "category": "computers_accessories",
+      "orders": 6488,
+      "gmv": 1029870.0,
+      "avg_review": 4.085,
+      "late_pct": 7.74,
+      "freight_pct_of_price": 29.8
+    },
+    {
+      "category": "furniture_decor",
+      "orders": 6166,
+      "gmv": 877672.0,
+      "avg_review": 4.074,
+      "late_pct": 8.63,
+      "freight_pct_of_price": 32.5
+    },
+    {
+      "category": "housewares",
+      "orders": 5679,
+      "gmv": 759226.0,
+      "avg_review": 4.205,
+      "late_pct": 7.01,
+      "freight_pct_of_price": 37.6
+    },
+    {
+      "category": "cool_stuff",
+      "orders": 3523,
+      "gmv": 691758.0,
+      "avg_review": 4.228,
+      "late_pct": 6.87,
+      "freight_pct_of_price": 20.7
+    },
+    {
+      "category": "auto",
+      "orders": 3784,
+      "gmv": 667887.0,
+      "avg_review": 4.152,
+      "late_pct": 8.67,
+      "freight_pct_of_price": 32.2
+    },
+    {
+      "category": "garden_tools",
+      "orders": 3409,
+      "gmv": 566141.0,
+      "avg_review": 4.194,
+      "late_pct": 8.04,
+      "freight_pct_of_price": 32.6
+    }
+  ]
+}
